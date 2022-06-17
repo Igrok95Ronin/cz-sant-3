@@ -1,0 +1,49 @@
+$primaryColorText: #1e4691;
+$primaryColorText2: #008dd0;
+
+body{
+    outline: 1px solid red;
+    margin: auto;
+    padding: 0;
+    font: 15px Helvetica,Arial,sans-serif;
+    max-width: 1920px;
+    min-width: 360px;
+    color: #7a7a7a;
+}
+.header {
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header-wrapper {
+
+}
+.header-log {
+    width: 100px;
+    margin-right: 10px;
+}
+.header-log2 {
+    width: 255px;
+}
+.header-btn {
+    width: 200px;
+}
+.header-btn__link {
+    background-color: $primaryColorText;
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    transition: .5s;
+    &:hover {
+        background-color: $primaryColorText2;
+        color: #fff;
+        transition: .5s;
+        letter-spacing: .5px;
+    }
+}
