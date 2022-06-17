@@ -160,6 +160,73 @@ body {
   margin: 0;
 }
 
+.fifth-section {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 101, 155, 0.8)), to(rgba(0, 101, 155, 0.8))), url(../img/hero1.jpg);
+  background-image: linear-gradient(rgba(0, 101, 155, 0.8), rgba(0, 101, 155, 0.8)), url(../img/hero1.jpg);
+  background-attachment: fixed;
+}
+
+.fifth-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fifth-title {
+  color: #1e4691;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 600;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.fifth-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.fifth-items {
+  background-image: url(../img/tex-or.png);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.fifth-items:hover {
+  -webkit-box-shadow: 2px 2px 5px 2px #212121;
+          box-shadow: 2px 2px 5px 2px #212121;
+  cursor: pointer;
+}
+
+.fifth-items__img {
+  max-width: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  border-bottom: 0.1px dashed black;
+}
+
+.fifth-items__text {
+  color: #008dd0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
 @media (max-width: 1200px) {
   .third-description {
     max-width: 100%;
@@ -201,6 +268,12 @@ body {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 800px) {
+  .fifth-box {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 768px) {
   .third-img {
     min-height: 300px;
@@ -208,6 +281,10 @@ body {
 
   .fourth-box__name {
     font-size: 19px;
+  }
+
+  .fifth-items__text {
+    font-size: 24px;
   }
 }
 @media (max-width: 576px) {
