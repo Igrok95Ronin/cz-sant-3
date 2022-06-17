@@ -24,7 +24,7 @@ $title = $text . ' ' . $city;
     
     
         <!--Шапка сайта-->
-        <header class="header">
+        <header class="header d-none d-md-block">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 header-container">
@@ -41,24 +41,28 @@ $title = $text . ' ' . $city;
         </header>
 
         <!-- Основное содержимое страницы -->
-        <main>
-            <!-- Раздел страницы-->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">...</div>                 
-                    </div>            
-                </div>
-                <!-- Определяет статью -->
-                <article>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">...</div>                 
-                        </div>            
+        <section class="section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 section-container d-md-none">
+                        <div class="sticky-top">
+                            <div class="d-grid col-12 ">
+                                <a class="btn header-btn__link" href="#" >111222333</a>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>            
+            </div>
+        </section>
+        <section class="second-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 second-container">
+                        <h1 class="second-title">INSTALATÉRSKÉ A TOPENÁŘSKÉ PRÁCE NÁCHOD</h1>
                     </div>
-                </article>
-            </section>
-        </main>
+                </div>
+            </div>
+        </section>
 
         <!--Нижний колонтитул страницы-->
         <footer>
