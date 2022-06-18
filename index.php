@@ -285,7 +285,6 @@ $title = $text . ' ' . $city;
                                 <img src="assets/img/0.24Geberit.png" class="w-100 imgWidth" alt="...">
                                 <img src="assets/img/0.25geosagt.png" class="w-100 imgWidth" alt="...">
                               </div>
-
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
