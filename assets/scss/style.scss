@@ -347,6 +347,17 @@ body{
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #008dd0; 
 }
+.footer {
+    height: 5vh;
+    background-color: #ef762a;
+    display: flex;
+    align-items: center;
+}
+.footer-container {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 
 

@@ -455,6 +455,23 @@ body {
   background-color: #008dd0;
 }
 
+.footer {
+  height: 5vh;
+  background-color: #ef762a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 @media (max-width: 1400px) {
   .sixth-left-block {
     max-width: 80%;
