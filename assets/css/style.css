@@ -1,11 +1,14 @@
 body {
-  outline: 1px solid red;
   margin: auto;
   padding: 0;
   font: 15px Helvetica, Arial, sans-serif;
   max-width: 1920px;
   min-width: 360px;
   color: #7a7a7a;
+}
+
+.btn2 {
+  border-radius: 0px !important;
 }
 
 .header-container {
@@ -402,6 +405,56 @@ body {
   font-size: 20px;
 }
 
+.ninth-section {
+  background-color: #008dd0;
+}
+
+.ninth-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ninth-title {
+  color: #1e4691;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 600;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.forms-box__buttom {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.forms-box__buttom:hover {
+  background-color: #fff;
+  color: #008dd0;
+}
+
+.tenth-section {
+  padding: 50px 0;
+}
+
+.img-box {
+  text-align: center;
+}
+
+.imgWidth {
+  max-width: calc(10% - 10px);
+  max-height: 110px;
+  margin-right: 10px;
+}
+.imgWidth:nth-child(9n) {
+  margin-right: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #008dd0;
+}
+
 @media (max-width: 1400px) {
   .sixth-left-block {
     max-width: 80%;
@@ -410,6 +463,18 @@ body {
 @media (max-width: 1200px) {
   .third-description {
     max-width: 100%;
+  }
+
+  .imgWidth {
+    max-width: calc(20% - 10px);
+    max-height: 110px;
+    margin-right: 10px;
+  }
+  .imgWidth:nth-child(4n) {
+    margin-right: 0;
+  }
+  .imgWidth:nth-child(-n+4) {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 992px) {
@@ -490,6 +555,18 @@ body {
     height: 100%;
     width: calc(50% - 20px);
   }
+
+  .imgWidth {
+    max-width: calc(26% - 10px);
+    max-height: 110px;
+    margin-right: 10px;
+  }
+  .imgWidth:nth-child(3n) {
+    margin-right: 0;
+  }
+  .imgWidth:nth-child(-n+6) {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 576px) {
   .section {
@@ -503,5 +580,17 @@ body {
   .eighth-items {
     height: 100%;
     width: 100%;
+  }
+
+  .imgWidth {
+    max-width: calc(40% - 30px);
+    max-height: 110px;
+    margin-right: 30px;
+  }
+  .imgWidth:nth-child(2n) {
+    margin-right: 0;
+  }
+  .imgWidth:nth-child(-n+8) {
+    margin-bottom: 30px;
   }
 }

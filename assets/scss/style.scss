@@ -10,7 +10,6 @@ $primaryColorText2: #008dd0;
 }
 
 body{
-    outline: 1px solid red;
     margin: auto;
     padding: 0;
     font: 15px Helvetica,Arial,sans-serif;
@@ -18,7 +17,9 @@ body{
     min-width: 360px;
     color: #7a7a7a;
 }
-
+.btn2 {
+    border-radius: 0px!important;
+}
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -73,8 +74,6 @@ body{
     margin: 0;
 }
 //Third section
-.third-section {
-}
 .third-container {
     padding: 0;
     display: grid;
@@ -174,8 +173,6 @@ body{
     line-height: 35px;
 }
 //sixth section
-.sixth-section {
-}
 .sixth-container {
     padding: 0;
     margin: 0 auto;
@@ -308,6 +305,48 @@ body{
     margin-top: 10px;
     font-size: 20px;
 }
+//Ninth section
+.ninth-section {
+    background-color: #008dd0;
+}
+.ninth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.ninth-title {
+    @include title();
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.forms-box__buttom {
+    color: #fff;
+    border: 1px solid #fff;
+    &:hover {
+        background-color: #fff;
+        color: #008dd0;
+    }
+}
+//Tenth section
+.tenth-section {
+    padding: 50px 0;
+}
+.tenth-container {
+}
+.img-box {
+    text-align: center;
+}
+.imgWidth {
+    max-width: calc(10% - 10px);
+    max-height: 110px;
+    margin-right: 10px;
+    &:nth-child(9n) {
+        margin-right: 0;
+    }
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #008dd0; 
+}
 
 
 
@@ -319,6 +358,17 @@ body{
 @media(max-width: 1200px) {
     .third-description {
         max-width: 100%;
+    }
+    .imgWidth {
+        max-width: calc(20% - 10px);
+        max-height: 110px;
+        margin-right: 10px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &:nth-child(-n+4) {
+            margin-bottom: 30px;
+        }
     }
 }
 @media(max-width: 992px) {
@@ -381,6 +431,17 @@ body{
         height: 100%;
         width: calc(50% - 20px) ;
     }
+    .imgWidth {
+        max-width: calc(26% - 10px);
+        max-height: 110px;
+        margin-right: 10px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-child(-n+6) {
+            margin-bottom: 30px;
+        }
+    }
 
 }
 @media(max-width: 576px) {
@@ -393,5 +454,16 @@ body{
     .eighth-items {
         height: 100%;
         width: 100%;
+    }
+    .imgWidth {
+        max-width: calc(40% - 30px);
+        max-height: 110px;
+        margin-right: 30px;
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        &:nth-child(-n+8) {
+            margin-bottom: 30px;
+        }
     }
 }
