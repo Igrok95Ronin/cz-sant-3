@@ -4,8 +4,8 @@ $site_data      = json_decode(file_get_contents('http://templates.jquery.link/ap
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'INSTALATÉRSKÉ A TOPENÁŘSKÉ PRÁCE NÁCHOD'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -33,7 +33,7 @@ $title = $text . ' ' . $city;
                             <img class="header-log2" src="assets/img/jirikavalek-logo-vtp-3.png" alt="" >
                         </div>
                         <div class="d-grid col-2 header-btn">
-                            <a class="btn header-btn__link" href="#" >111222333</a>
+                            <a class="btn header-btn__link" href="<?= $phone_href ?>" ><?= $phone_name ?></a>
                         </div>
                     </div>                 
                 </div>            
@@ -47,7 +47,7 @@ $title = $text . ' ' . $city;
                     <div class="col-12 section-container d-md-none">
                         <div class="fixed-top">
                             <div class="d-grid col-12 ">
-                                <a class="btn header-btn__link btn2" href="#" >111222333</a>
+                                <a class="btn header-btn__link btn2" href="<?= $phone_href ?>" ><?= $phone_name ?></a>
                             </div>
                         </div>
                     </div>                 
@@ -58,7 +58,7 @@ $title = $text . ' ' . $city;
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 second-container">
-                        <h1 class="second-title">INSTALATÉRSKÉ A TOPENÁŘSKÉ PRÁCE NÁCHOD</h1>
+                        <h1 class="second-title"><?= $title ?></h1>
                     </div>
                 </div>
             </div>
@@ -172,9 +172,9 @@ $title = $text . ' ' . $city;
                 <div class="row">
                     <div class="col-12 seventh-container">
                         <h2 class="seventh-title">PRO DALŠÍ INFORMACE VOLEJTE:</h2>
-                        <a class="seventh-link d-none d-md-block" href="#">111222333</a>
+                        <a class="seventh-link d-none d-md-block" href="<?= $phone_href ?>"><?= $phone_name ?></a>
                         <div class="d-grid col-12 header-btn header-btn--width d-md-none">
-                            <a class="btn header-btn__link header-btn__link--color-btn" href="#" >111222333</a>
+                            <a class="btn header-btn__link header-btn__link--color-btn" href="<?= $phone_href ?>" ><?= $phone_name ?></a>
                         </div>
                     </div>
                 </div>
